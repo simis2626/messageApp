@@ -11,27 +11,42 @@
 .hamburger {
   width: 40px;
   height: 40px;
-  padding-top: 5px;
+  padding-top: 0px;
 
 }
 
-span.hamburger {
+div.hamburger {
   max-height: 50px;
   max-width: 50px;
   width: 50px;
-  height: inherit;
-  padding: 5px;
+  height: 50px;
+  padding: 0px 5px;
   margin: 0;
-
+  vertical-align: middle;
+  display: inline-block;
+  background: url("../assets/menu-alt-512.png") no-repeat center center;
+  background-size: contain;
 }
 
 span.title {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+
   padding-bottom: 10px;
   height: inherit;
-  line-height: 1.5em;
+  line-height: 50px;
+  font-size: 40px;
   vertical-align: middle;
   display: inline-block;
   margin-left: 40px;
+}
+
+.card {
+  width: inherit;
+  margin: 20px 10px;
+
+}
+.content{
+  overflow: auto;
+  height: 100%;
+  width: 100%;
 }
