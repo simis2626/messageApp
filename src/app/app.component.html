@@ -1,10 +1,12 @@
-<div class="header-bar">
-  <div class="hamburger">
+<div class="header-bar" id="header">
+  <div class="hamburger" (click)="toggleMenu()">
   </div>
 
   <span
   class="title">MessageApp</span></div>
+<app-menu #menu [menuVisible]="menuVis"></app-menu>
 <div class="content">
+
   <div class="mdl-card mdl-shadow--4dp card" >
     <div class="mdl-card__media"><img src="../assets/placeholder.png" width="173" height="157" border="0"
                                       alt="" style="padding:10px;">
