@@ -1,3 +1,7 @@
 <p>
   login works!
 </p>
+<div *ngFor="let user of users">{{user.name}}<img class="circle-profile" src="" [src]="'data:image/jpg;base64,'+ user.picture" />
+  SHIRLEY
+</div>
+

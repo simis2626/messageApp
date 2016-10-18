@@ -9,7 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { CardDemoComponent } from './card-demo/card-demo.component';
 import {routes} from './app.router';
 import { LoginComponent } from './login/login.component';
-
+import { UserService } from './user.service';
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
