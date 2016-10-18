@@ -15,8 +15,6 @@ export class AppComponent implements AfterViewInit{
   }
 
   ngAfterViewInit(){
-    document.getElementById("header").scrollIntoView(true);
-
 
   }
 
