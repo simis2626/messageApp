@@ -1,10 +1,11 @@
-<div class="header-bar" id="header">
-  <div class="hamburger" (click)="toggleMenu()">
+<div class="header-bar" id="header" [class.entry-set-visible]="visibleSubtitle">
+  <div  class="hamburger mdl-js-ripple-effect" (click)="toggleMenu()">
   </div>
 
   <span
   class="title">MessageApp</span></div>
-<app-menu #menu [menuVisible]="menuVis"></app-menu>
+
+<app-menu #menu [menuVisible]="menuVis" (menuToggled)="toggleMenu()"></app-menu>
 <div class="content">
   <router-outlet>
 

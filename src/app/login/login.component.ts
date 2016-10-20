@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.userService.getUsers().subscribe((data)=> this.users = data);
-    setTimeout(()=> this.visibleSubtitle = true, 800);
+    setTimeout(()=> this.visibleSubtitle = true, 400);
   }
 
 

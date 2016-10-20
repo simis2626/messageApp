@@ -6,10 +6,14 @@
   z-index: 4;
   top: 50px;
   left: 0;
-  background-color: #111;
+  background: -moz-linear-gradient(top, rgba(103,58,183,0.96) 68%, rgba(112,91,150,0.96) 85%, rgba(120,120,120,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(103,58,183,0.96) 68%,rgba(112,91,150,0.96) 85%,rgba(120,120,120,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(103,58,183,0.96) 68%,rgba(112,91,150,0.96) 85%,rgba(120,120,120,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5673ab7', endColorstr='#00787878',GradientType=0 );
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
+  will-change: width;
+  transition: width 0.4s ease-in-out;
 }
 
 .showMenu {
@@ -17,6 +21,8 @@
   box-shadow: 2px 3px 6px 0px darkslategrey;
 }
 
-a {
-  display: block;
+.link-contrast{
+  color: orange;
+  font-weight: 500;
+  font-size: large;
 }

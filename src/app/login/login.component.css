@@ -11,7 +11,7 @@
 .circle-profile {
   height: 130px;
   width: 130px;
-  border-radius: 50%;
+  border-radius: 3%;
   border-style: solid;
 }
 
@@ -26,4 +26,9 @@
 
 }
 
+.card-box{
+  width:50%;
+  margin-left: 25%;
+  margin-bottom: 20px;
 
+}

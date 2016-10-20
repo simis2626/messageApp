@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Input} from "@angular/core/src/metadata/directives";
+import {Component, OnInit, EventEmitter} from '@angular/core';
+import {Input, Output} from "@angular/core/src/metadata/directives";
 
 @Component({
   selector: 'app-menu',
@@ -8,16 +8,20 @@ import {Input} from "@angular/core/src/metadata/directives";
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.menuVisible=false;
+
+  }
 
   ngOnInit() {
     this.menuVisible = false;
   }
-
-  @Input() menuVisible:boolean = false;
+  @Output() menuToggled = new EventEmitter();
+  @Input() menuVisible:boolean;
 
   toggleMenu(){
     this.menuVisible = !this.menuVisible;
+    this.menuToggled.emit();
   }
 
 

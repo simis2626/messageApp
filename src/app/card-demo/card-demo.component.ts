@@ -14,7 +14,7 @@ export class CardDemoComponent implements OnInit {
   }
 
   ngOnInit() {
-    setTimeout(()=>this.visibleSubtitle = true, 800)
+    setTimeout(()=>this.visibleSubtitle = true, 400)
   }
 
 }

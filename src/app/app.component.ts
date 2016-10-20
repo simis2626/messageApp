@@ -1,21 +1,25 @@
-import {Component, AfterViewInit} from '@angular/core';
+import {Component, AfterViewInit, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css',
+              './shared/shared-animators.css']
 })
-export class AppComponent implements AfterViewInit{
+export class AppComponent implements OnInit{
 
-
+  visibleSubtitle:boolean;
   menuVis:boolean = false;
-
+  constructor(){
+    this.visibleSubtitle = false;
+  }
   toggleMenu(){
     this.menuVis = !this.menuVis;
   }
 
-  ngAfterViewInit(){
 
+  ngOnInit(){
+    setTimeout(()=>this.visibleSubtitle = true, 300);
   }
 
 
