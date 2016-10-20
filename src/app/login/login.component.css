@@ -1,6 +1,29 @@
 
-.circle-profile {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+
+.centre-container{
+  padding-top: 5%;
+  height: auto;
+  text-align: center;
+
 }
+
+
+.circle-profile {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+
+.subtitle {
+  text-align: center;
+  position: relative;
+  display: block;
+  z-index: 3;
+
+  width: 100%;
+
+}
+
+

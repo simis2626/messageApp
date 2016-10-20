@@ -1,7 +1,5 @@
-<p>
-  login works!
-</p>
-<div *ngFor="let user of users">{{user.name}}<img class="circle-profile" src="" [src]="'data:image/jpg;base64,'+ user.picture" />
-  SHIRLEY
+<h3 class="subtitle entry-set" [class.entry-set-visible]="visibleSubtitle">Who are you?</h3>
+<div *ngFor="let user of users" class="entry-set centre-container" [class.entry-set-visible]="visibleSubtitle"><img [style.border-color]="user.color" class="circle-profile" src="" [src]="'data:image/jpg;base64,'+ user.picture" />
+  <br>{{user.name}}
 </div>
 

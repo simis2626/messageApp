@@ -9,7 +9,8 @@ export class User{
   constructor(
     public name:string,
     public picture:string,
-    public color:string
+    public color:string,
+    public _id?:string
 
   ){}
 

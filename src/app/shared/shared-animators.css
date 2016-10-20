@@ -1,0 +1,11 @@
+.entry-set{
+  top:-40px;
+  opacity: 0;
+  will-change: top, opacity;
+  transition: top 450ms ease-in, opacity 250ms ease;
+
+}
+.entry-set-visible {
+  opacity: 1;
+  top: 0;
+}
