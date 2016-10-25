@@ -1,0 +1,11 @@
+
+.pre-enter {
+  height: 0;
+  will-change: height;
+  transition: height 400ms ease-in;
+
+}
+
+.entered {
+  height: auto;
+}

@@ -1,15 +1,11 @@
 <h3 class="mdl-typography--display-2 mdl-typography--display-2-color-contrast subtitle entry-set" [class.entry-set-visible]="visibleSubtitle">Who are you?</h3>
 
 
-<div *ngFor="let user of users" class="mdl-card mdl-shadow--2dp card-box">
-
-
-
-
-  <div class="entry-set centre-container" [class.entry-set-visible]="visibleSubtitle">
-
+<div *ngFor="let user of users" class="mdl-card mdl-shadow--2dp card-box entry-set centre-container"
+     [class.entry-set-visible]="visibleSubtitle">
 
     <div class="mdl-card__media" [style.background-color]="user.color"><img [style.border-color]="user.color" class="circle-profile" src="" [src]="'data:image/jpg;base64,'+ user.picture" /></div>
   <div class="mdl-card__title"><div class="mdl-card__title-text">{{user.name}}</div></div>
-</div></div>
+  <app-auth-box [user]="user"></app-auth-box>
+</div>
 

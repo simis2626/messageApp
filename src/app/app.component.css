@@ -34,15 +34,16 @@ div.hamburger {
 }
 
 span.title {
-  font-family: 'Roboto', sans-serif;
-
+  font-family: 'Pacifico', Helvetica, sans-serif;
   padding-bottom: 10px;
   height: inherit;
   line-height: 40px;
-  font-size: 40px;
+  font-size: 35px;
   vertical-align: middle;
   display: inline-block;
   margin-left: 40px;
+  font-weight: 400;
+  color: #2b2b2b;
 }
 
 .content{
