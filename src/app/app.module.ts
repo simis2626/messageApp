@@ -9,6 +9,7 @@ import {routes} from "./app.router";
 import {LoginComponent} from "./login/login.component";
 import {UserService} from "./user.service";
 import {AuthBoxComponent} from "./smallComponents/auth-box/auth-box.component";
+import { LoginCardComponent } from './smallComponents/login-card/login-card.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {AuthBoxComponent} from "./smallComponents/auth-box/auth-box.component";
     MenuComponent,
     CardDemoComponent,
     LoginComponent,
-    AuthBoxComponent
+    AuthBoxComponent,
+    LoginCardComponent
   ],
   imports: [
     BrowserModule,

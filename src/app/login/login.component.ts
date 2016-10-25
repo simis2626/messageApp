@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "../objectclasses/User";
 import {UserService} from "../user.service";
 
@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
     this.userService.getUsers().subscribe((data)=> this.users = data);
     setTimeout(()=> this.visibleSubtitle = true, 400);
   }
-
 
 
 
