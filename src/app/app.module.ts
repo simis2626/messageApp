@@ -9,7 +9,8 @@ import {routes} from "./app.router";
 import {LoginComponent} from "./login/login.component";
 import {UserService} from "./user.service";
 import {AuthBoxComponent} from "./smallComponents/auth-box/auth-box.component";
-import { LoginCardComponent } from './smallComponents/login-card/login-card.component';
+import {LoginCardComponent} from "./smallComponents/login-card/login-card.component";
+import {AuthService} from "./auth.service";
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { LoginCardComponent } from './smallComponents/login-card/login-card.comp
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [UserService],
+  providers: [UserService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
