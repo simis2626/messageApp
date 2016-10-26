@@ -8,7 +8,7 @@ import {User} from "../../objectclasses/User";
     '../../shared/shared-animators.css']
 })
 export class LoginCardComponent implements OnInit {
-
+  public showLogin:boolean;
   constructor() { }
 
   ngOnInit() {
@@ -18,5 +18,9 @@ export class LoginCardComponent implements OnInit {
 
     @Input()user:User;
 
+  showLoginProc(){
+    this.showLogin = !this.showLogin;
+
+  }
 
 }

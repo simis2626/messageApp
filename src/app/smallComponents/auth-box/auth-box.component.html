@@ -1,5 +1,5 @@
-<div [class.entered]="shown2" class="pre-enter mdl-card__actions"><!--[class.entered]="shown"-->
-  <div style="float: left; width: 70%" class="mdl-textfield mdl-js-textfield">
+<div [class.entered]="show" class="pre-enter mdl-card__actions"><!--[class.entered]="shown"-->
+  <div style="float: left; width: 70%" [class.pad]="show" class="no-pad mdl-textfield mdl-js-textfield">
     <input class="mdl-textfield__input" type="password" id="sample1">
     <label class="mdl-textfield__label" for="sample1">Enter Your Password</label>
   </div>
@@ -8,5 +8,5 @@
       Submit
   </button>
   </div>
-
+<span class="clear-float"></span>
 </div>

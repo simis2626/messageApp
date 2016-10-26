@@ -1,9 +1,13 @@
-
-<div (click)="openLoginBox()" class="mdl-card mdl-shadow--2dp card-box entry-set centre-container"
+<div (click)="showLoginProc()" [class.mdl-shadow--8dp]="showLogin" class="anim-boxshad mdl-card mdl-shadow--2dp card-box entry-set centre-container"
      [class.entry-set-visible]="visibleSubtitle">
 
-<div class="mdl-card__media" [style.background-color]="user.color"><img [style.border-color]="user.color" class="circle-profile" src="" [src]="'data:image/jpg;base64,'+ user.picture" /></div>
-<div class="mdl-card__title"><div class="mdl-card__title-text">{{user.name}}</div></div>
-<app-auth-box [user]="user"></app-auth-box>
-
+  <div class="mdl-card__media" [style.background-color]="user.color"><img [style.border-color]="user.color"
+                                                                          class="circle-profile" src=""
+                                                                          [src]="'data:image/jpg;base64,'+ user.picture"/>
   </div>
+  <div class="mdl-card__title">
+    <div [class.title-login]="showLogin" class="title-nologin mdl-card__title-text">{{user.name}}</div>
+  </div>
+  <app-auth-box [user]="user" [show]="showLogin"></app-auth-box>
+
+</div>

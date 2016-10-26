@@ -1,0 +1,16 @@
+.title-nologin{
+  position: relative;
+  top: 30px;
+  will-change: top;
+  transition: top 150ms ease-in-out;
+
+}
+.title-login{
+  top:10px;
+}
+
+.anim-boxshad{
+  will-change: box-shadow;
+  transition: box-shadow 600ms ease-out;
+
+}

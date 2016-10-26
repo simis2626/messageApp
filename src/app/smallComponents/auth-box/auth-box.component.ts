@@ -8,18 +8,15 @@ import {User} from "../../objectclasses/User";
               '../../shared/shared-animators.css']
 })
 export class AuthBoxComponent implements OnInit {
-  public shown:boolean;
-  public shown2:boolean;
   constructor() {
-    this.shown = false;
-    this.shown2=false;
   }
 
   ngOnInit() {
-    setTimeout(()=>this.shown2=true,4000);
   }
 
   @Input() user: User;
+  @Input() show:boolean;
+
 
 
 

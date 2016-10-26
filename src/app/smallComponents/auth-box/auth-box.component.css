@@ -1,0 +1,11 @@
+.no-pad{
+  padding: 0px;
+  will-change: padding;
+  transition: padding 300ms ease;
+
+}
+
+.pad{
+  padding:20px 0;
+
+}

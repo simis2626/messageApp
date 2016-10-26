@@ -12,13 +12,15 @@
 
 .pre-enter {
   opacity:0;
-  will-change: opacity;
-  transition: opacity 3000ms ease-in;
+  height:0;
+  will-change: opacity, height;
+  transition: height 380ms ease;
 
 }
 
 .entered {
   opacity:1;
+  height: 119px;
 }
 
 .centre-container{
@@ -52,4 +54,9 @@
   margin-left: 25%;
   margin-bottom: 20px;
 
+}
+
+.clear-float{
+  float: none;
+  display: block;
 }
