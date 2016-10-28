@@ -12,6 +12,7 @@ import {AuthBoxComponent} from "./smallComponents/auth-box/auth-box.component";
 import {LoginCardComponent} from "./smallComponents/login-card/login-card.component";
 import {AuthService} from "./auth.service";
 import { ChatListComponent } from './chat-list/chat-list.component';
+import { ChatListCardComponent } from './chat-list-card/chat-list-card.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ChatListComponent } from './chat-list/chat-list.component';
     LoginComponent,
     AuthBoxComponent,
     LoginCardComponent,
-    ChatListComponent
+    ChatListComponent,
+    ChatListCardComponent
   ],
   imports: [
     BrowserModule,

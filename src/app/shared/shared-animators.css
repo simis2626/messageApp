@@ -20,7 +20,13 @@
 
 .entered {
   opacity:1;
-  height: 119px;
+  height: 60px;
+}
+
+@media (max-width:585px){
+	.entered{
+	height:119px;
+	}
 }
 
 .centre-container{
