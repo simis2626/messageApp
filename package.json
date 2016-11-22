@@ -6,7 +6,7 @@
   "engines" : { "npm" : ">=3.0.0",
               "node": ">=6.0.0"},
   "scripts": {
-    "start": "ng serve -prod",
+    "start": "npm install && ng serve -prod",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
