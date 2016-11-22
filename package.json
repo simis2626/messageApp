@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
+  "engines" : { "npm" : ">=3.0.0",
+              "node": ">=6.0.0"},
   "scripts": {
     "start": "ng serve -prod",
     "lint": "tslint \"src/**/*.ts\"",
